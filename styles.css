@@ -71,10 +71,13 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
+  opacity: 0.75;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  opacity: 1.0;
+  border-color: #888;
 }
 .tag {
   background-color: #efefef;
@@ -88,10 +91,35 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
+.flex .card .tower-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: block;
+  margin: 10px auto;
+}
+.london-image {
+  max-width: 50%;
+  border-radius: 4%;
+  border: 3px solid white;
+  display: block;
+  margin: 30px auto;
+}
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.large-card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 90%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -119,7 +147,10 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: #0399ff;
 }
-
+#contact {
+  list-style: none;  
+  margin: 0;
+}
 footer {
   width: 100%;
   min-height: 30px;
@@ -150,12 +181,6 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
 }
 a.github {
   background-image: url(images/github.svg);
